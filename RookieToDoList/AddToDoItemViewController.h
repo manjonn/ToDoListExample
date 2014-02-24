@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIToolbar *dateToolbar;
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIButton *locationBtn;
 
 @property (weak,nonatomic) id<AddToDoItemViewControllerDelegate> delegate;
 

@@ -23,6 +23,9 @@
 		05BBADD618B952240099EB1E /* RookieToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BBADD518B952240099EB1E /* RookieToDoListTests.m */; };
 		05BBADE118B955FE0099EB1E /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BBADE018B955FE0099EB1E /* ToDoItem.m */; };
 		05BBADE418B96A730099EB1E /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BBADE318B96A730099EB1E /* AddToDoItemViewController.m */; };
+		05BBADEA18BA9AB90099EB1E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBADE918BA9AB90099EB1E /* MapKit.framework */; };
+		05BBADED18BA9BB40099EB1E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BBADEC18BA9BB40099EB1E /* MapViewController.m */; };
+		05BBADEF18BAB1A60099EB1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BBADEE18BAB1A60099EB1E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,10 @@
 		05BBADE018B955FE0099EB1E /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 		05BBADE218B96A730099EB1E /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoItemViewController.h; sourceTree = "<group>"; };
 		05BBADE318B96A730099EB1E /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoItemViewController.m; sourceTree = "<group>"; };
+		05BBADE918BA9AB90099EB1E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		05BBADEB18BA9BB40099EB1E /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		05BBADEC18BA9BB40099EB1E /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		05BBADEE18BAB1A60099EB1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BBADEF18BAB1A60099EB1E /* CoreLocation.framework in Frameworks */,
 				05BBADAD18B952230099EB1E /* CoreGraphics.framework in Frameworks */,
 				05BBADAF18B952230099EB1E /* UIKit.framework in Frameworks */,
+				05BBADEA18BA9AB90099EB1E /* MapKit.framework in Frameworks */,
 				05BBADAB18B952230099EB1E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +116,8 @@
 		05BBADA918B952230099EB1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05BBADEE18BAB1A60099EB1E /* CoreLocation.framework */,
+				05BBADE918BA9AB90099EB1E /* MapKit.framework */,
 				05BBADAA18B952230099EB1E /* Foundation.framework */,
 				05BBADAC18B952230099EB1E /* CoreGraphics.framework */,
 				05BBADAE18B952230099EB1E /* UIKit.framework */,
@@ -121,6 +132,8 @@
 				05BBADB918B952240099EB1E /* AppDelegate.h */,
 				05BBADBA18B952240099EB1E /* AppDelegate.m */,
 				05BBADBC18B952240099EB1E /* Main.storyboard */,
+				05BBADEB18BA9BB40099EB1E /* MapViewController.h */,
+				05BBADEC18BA9BB40099EB1E /* MapViewController.m */,
 				05BBADE218B96A730099EB1E /* AddToDoItemViewController.h */,
 				05BBADE318B96A730099EB1E /* AddToDoItemViewController.m */,
 				05BBADDF18B955FE0099EB1E /* ToDoItem.h */,
@@ -209,6 +222,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Manjula Jonnalagadda";
 				TargetAttributes = {
+					05BBADA618B952230099EB1E = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					05BBADC718B952240099EB1E = {
 						TestTargetID = 05BBADA618B952230099EB1E;
 					};
@@ -262,6 +282,7 @@
 				05BBADC118B952240099EB1E /* ViewController.m in Sources */,
 				05BBADE418B96A730099EB1E /* AddToDoItemViewController.m in Sources */,
 				05BBADBB18B952240099EB1E /* AppDelegate.m in Sources */,
+				05BBADED18BA9BB40099EB1E /* MapViewController.m in Sources */,
 				05BBADE118B955FE0099EB1E /* ToDoItem.m in Sources */,
 				05BBADB718B952230099EB1E /* main.m in Sources */,
 			);
@@ -472,6 +493,7 @@
 				05BBADDB18B952240099EB1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05BBADDC18B952240099EB1E /* Build configuration list for PBXNativeTarget "RookieToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +502,7 @@
 				05BBADDE18B952240099EB1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

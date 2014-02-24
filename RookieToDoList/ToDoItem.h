@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface ToDoItem : NSObject
 
 @property(nonatomic,strong)NSString *item;
 @property(nonatomic,strong)NSDate *date;
+@property(nonatomic,strong)CLPlacemark *placemark;
 
 @end
